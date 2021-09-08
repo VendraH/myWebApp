@@ -28,6 +28,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <snapshotRepository>
+       <id>nexusRepo</id>
+      <url>http://3.141.31.54:8081/nexus/content/repositories/sample-snapshots</url>
+   </snapshotRepository>
+   <repository>
+       <id>nexusRepo</id>
+      <url>http://3.141.31.54:8081/nexus/content/repositories/sample-releases</url>
+   </repository>
+  </distributionManagement>
 
   <build>
     <finalName>myWebApp</finalName>
